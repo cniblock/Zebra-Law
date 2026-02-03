@@ -1081,7 +1081,6 @@ h4 {
   height: 50px;
   width: auto;
   margin-bottom: 16px;
-  filter: brightness(0) invert(1);
 }
 
 .footer-tagline {
