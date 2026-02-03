@@ -1078,9 +1078,12 @@ h4 {
 }
 
 .footer-logo-img {
-  height: 50px;
+  max-height: 60px;
+  max-width: 200px;
   width: auto;
+  height: auto;
   margin-bottom: 16px;
+  object-fit: contain;
 }
 
 .footer-tagline {
