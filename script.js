@@ -72,6 +72,50 @@ if (navToggle && nav) {
   setInterval(nextSlide, slideInterval);
 })();
 
+// Back to Top Button
+(function initBackToTop() {
+  const backToTopBtn = document.getElementById("back-to-top");
+  if (!backToTopBtn) return;
+
+  let lastScrollY = window.scrollY;
+  let scrollingUp = false;
+  const scrollThreshold = 300; // Show button after scrolling this far down
+
+  function handleScroll() {
+    const currentScrollY = window.scrollY;
+    scrollingUp = currentScrollY < lastScrollY;
+    
+    // Show button when scrolled down past threshold AND scrolling up
+    if (currentScrollY > scrollThreshold && scrollingUp) {
+      backToTopBtn.classList.add("visible");
+    } else {
+      backToTopBtn.classList.remove("visible");
+    }
+    
+    lastScrollY = currentScrollY;
+  }
+
+  // Throttle scroll events for performance
+  let ticking = false;
+  window.addEventListener("scroll", function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        handleScroll();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  // Scroll to top when clicked
+  backToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+})();
+
 // Cookie Consent Banner
 const cookieBanner = document.getElementById("cookie-banner");
 const cookieAccept = document.getElementById("cookie-accept");
