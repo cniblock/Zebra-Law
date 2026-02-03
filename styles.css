@@ -1444,6 +1444,7 @@ h4 {
 .service-content p {
   color: var(--muted);
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .center-cta {
