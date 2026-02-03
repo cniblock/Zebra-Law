@@ -21,9 +21,6 @@ if (navToggle && nav) {
     "zebra_header_3.jpg",
     "zebra_header_6.jpg",
     "zebra_header_7.jpg",
-    "zebra_header_8.jpg",
-    "zebra_header_9.jpg",
-    "zebra_header_10.jpg",
     "zebra_header_11.jpg"
   ];
   // ============================================
