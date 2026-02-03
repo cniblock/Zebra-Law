@@ -6,6 +6,15 @@ if (navToggle && nav) {
     const isOpen = nav.classList.toggle("show");
     navToggle.setAttribute("aria-expanded", String(isOpen));
   });
+
+  // Close menu when a nav link is clicked
+  const navLinks = nav.querySelectorAll("a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("show");
+      navToggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
 
 // Hero Image Slideshow
