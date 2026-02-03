@@ -1528,11 +1528,37 @@ h4 {
 
   .footer-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
+    text-align: center;
   }
 
   .footer-brand {
     margin-bottom: 16px;
+    align-items: center;
+  }
+
+  .footer-logo-img {
+    margin: 0 auto 16px;
+  }
+
+  .footer-company,
+  .footer-legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-company h4,
+  .footer-legal h4 {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .sra-badge {
+    margin: 24px auto 0;
   }
 
   .footer-bottom {
