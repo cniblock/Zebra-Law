@@ -1479,6 +1479,15 @@ h4 {
     display: inline;
   }
 
+  .services-hero h1 {
+    font-size: clamp(1.8rem, 5vw, 2.4rem);
+    padding: 0 10px;
+  }
+
+  .page-hero {
+    padding: 50px 0 30px;
+  }
+
   .innovation-grid,
   .services-preview,
   .focus-grid,
@@ -1535,8 +1544,22 @@ h4 {
     text-align: center;
   }
 
-  .service-row {
+  .service-row,
+  .service-row:nth-child(even) {
     grid-template-columns: 1fr;
+  }
+
+  .service-row:nth-child(even) .service-image,
+  .service-row:nth-child(even) .service-content {
+    order: unset;
+  }
+
+  .alternate-sections .service-row:nth-child(even) {
+    padding: 36px 20px;
+  }
+
+  .service-content h2 {
+    font-size: 1.2rem;
   }
 }
 
