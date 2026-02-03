@@ -1408,11 +1408,24 @@ h4 {
     width: 100%;
   }
 
+  .home-hero .hero-title {
+    font-size: clamp(2.4rem, 8vw, 3.2rem);
+  }
+
+  .hero-title-line {
+    display: inline;
+  }
+
   .innovation-grid,
   .services-preview,
   .focus-grid,
   .profile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .profile-grid {
