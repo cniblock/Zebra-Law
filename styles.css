@@ -924,7 +924,7 @@ h4 {
 .center-title {
   text-align: center;
   font-weight: 500;
-  color: var(--muted);
+  color: var(--text);
   margin-bottom: 24px;
   font-size: 1.6rem;
   font-family: "Exo", "Inter", system-ui, sans-serif;
