@@ -1547,6 +1547,7 @@ h4 {
   .service-row,
   .service-row:nth-child(even) {
     grid-template-columns: 1fr;
+    padding: 30px 20px;
   }
 
   .service-row:nth-child(even) .service-image,
@@ -1554,8 +1555,18 @@ h4 {
     order: unset;
   }
 
+  .alternate-sections .service-row,
   .alternate-sections .service-row:nth-child(even) {
-    padding: 36px 20px;
+    padding: 30px 20px;
+  }
+
+  .service-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .service-content {
+    padding: 0;
   }
 
   .service-content h2 {
