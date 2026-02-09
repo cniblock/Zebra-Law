@@ -672,6 +672,7 @@ h4 {
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .services-preview {
@@ -1583,6 +1584,9 @@ h4 {
     text-align: center;
   }
 
+}
+
+@media (max-width: 1000px) {
   .service-row,
   .service-row:nth-child(even) {
     grid-template-columns: 1fr;
