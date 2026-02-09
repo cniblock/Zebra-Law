@@ -128,7 +128,8 @@ if (navToggle && nav) {
 // Cookie Consent Banner
 const cookieBanner = document.getElementById("cookie-banner");
 const cookieAccept = document.getElementById("cookie-accept");
-const cookieDecline = document.getElementById("cookie-decline");
+const cookieNecessary = document.getElementById("cookie-necessary");
+const cookieReject = document.getElementById("cookie-reject");
 
 function getCookie(name) {
   const value = `; ${document.cookie}`;
@@ -163,7 +164,7 @@ if (getCookie("cookie_consent")) {
   showCookieBanner();
 }
 
-// Accept cookies
+// Accept all cookies
 if (cookieAccept) {
   cookieAccept.addEventListener("click", () => {
     setCookie("cookie_consent", "accepted", 365);
@@ -171,10 +172,18 @@ if (cookieAccept) {
   });
 }
 
-// Decline cookies
-if (cookieDecline) {
-  cookieDecline.addEventListener("click", () => {
-    setCookie("cookie_consent", "declined", 365);
+// Necessary cookies only
+if (cookieNecessary) {
+  cookieNecessary.addEventListener("click", () => {
+    setCookie("cookie_consent", "necessary", 365);
+    hideCookieBanner();
+  });
+}
+
+// Reject all non-essential cookies
+if (cookieReject) {
+  cookieReject.addEventListener("click", () => {
+    setCookie("cookie_consent", "rejected", 365);
     hideCookieBanner();
   });
 }

@@ -462,15 +462,28 @@ h4 {
   transform: translateY(-1px);
 }
 
-.cookie-btn-decline {
+.cookie-btn-necessary {
   background: transparent;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-.cookie-btn-decline:hover {
+.cookie-btn-necessary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+.cookie-btn-reject {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cookie-btn-reject:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
 
 /* Back to Top Button */
@@ -516,6 +529,7 @@ h4 {
   .cookie-buttons {
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .hero-lead-line {
