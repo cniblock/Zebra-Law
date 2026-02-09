@@ -36,7 +36,8 @@ permalink: "news.html"
 
           <div class="news-grid-boxes">
             {%- for article in collections.news -%}
-            <a class="news-box news-box-image" href="{{ article.url }}" data-category="{{ article.data.category }}" style="background-image: url('/images/{{ article.data.image }}')">
+            <a class="news-box news-box-image" href="{{ article.url }}" data-category="{{ article.data.category }}">
+              <img class="news-box-img" src="/images/{{ article.data.image }}" alt="{{ article.data.imageAlt | default(article.data.articleTitle) }}" loading="lazy">
               <div class="news-box-overlay"></div>
               <div class="news-box-content">
                 <span class="news-tag news-tag-{{ article.data.category }}">{{ article.data.category | capitalize }}</span>
