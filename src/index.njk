@@ -1,69 +1,22 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zebra Law | A new breed of legal consultants</title>
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Zebra Law is a tech oriented, boutique legal firm offering innovative services designed to support the Insurance Sector, especially the disruptive MGA market. Over 35 years' experience in Defendant PI, telematics, fraud, and large loss claims.">
-    <meta name="keywords" content="Law, Legal Services, MGA Insurance, Telematics, Claims, Fraud, Indemnity, Large Loss, Recoveries, Volume Motor, Consultancy, Defendant PI, Credit Hire, Costs, Strategic Litigation, UK Solicitors, Insurance Law, Legal Consultants">
-    <meta name="author" content="Zebra Law Ltd">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.zebra.law/">
-    
-    <!-- Geographic Tags -->
-    <meta name="geo.region" content="GB">
-    <meta name="geo.placename" content="Wilmslow, Cheshire">
-    <meta name="geo.position" content="53.327;-2.231">
-    <meta name="ICBM" content="53.327, -2.231">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.zebra.law/">
-    <meta property="og:title" content="Zebra Law | A new breed of legal consultants">
-    <meta property="og:description" content="Tech oriented, boutique legal firm offering innovative services for the Insurance Sector. Specialists in MGA Insurance, Telematics, Fraud, Large Loss, and Defendant PI.">
-    <meta property="og:image" content="https://www.zebra.law/images/OG_image.png">
-    <meta property="og:site_name" content="Zebra Law">
-    <meta property="og:locale" content="en_GB">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.zebra.law/">
-    <meta name="twitter:title" content="Zebra Law | A new breed of legal consultants">
-    <meta name="twitter:description" content="Tech oriented, boutique legal firm offering innovative services for the Insurance Sector. Specialists in MGA Insurance, Telematics, Fraud, Large Loss, and Defendant PI.">
-    <meta name="twitter:image" content="https://www.zebra.law/images/OG_image.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.min.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="index.html"><img src="logo/Zebra Logo.png" alt="Zebra Law" class="logo-img"></a>
-        <nav class="nav" id="site-nav" aria-label="Primary">
-          <a href="services.html">Services</a>
-          <a href="siu.html">SIU</a>
-          <a href="news.html">News</a>
-          <a href="#team">Meet the Team</a>
-          <a class="button header-cta" href="#contact">Get in Touch</a>
-        </nav>
-        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </header>
-
-    <main>
+---
+layout: base.njk
+title: "Zebra Law | A new breed of legal consultants"
+description: "Zebra Law is a tech oriented, boutique legal firm offering innovative services designed to support the Insurance Sector, especially the disruptive MGA market. Over 35 years' experience in Defendant PI, telematics, fraud, and large loss claims."
+keywords: "Law, Legal Services, MGA Insurance, Telematics, Claims, Fraud, Indemnity, Large Loss, Recoveries, Volume Motor, Consultancy, Defendant PI, Credit Hire, Costs, Strategic Litigation, UK Solicitors, Insurance Law, Legal Consultants"
+canonical: "https://www.zebra.law/"
+geoRegion: "GB"
+geoPlace: "Wilmslow, Cheshire"
+geoPosition: "53.327;-2.231"
+icbm: "53.327, -2.231"
+ogUrl: "https://www.zebra.law/"
+ogTitle: "Zebra Law | A new breed of legal consultants"
+ogDescription: "Tech oriented, boutique legal firm offering innovative services for the Insurance Sector. Specialists in MGA Insurance, Telematics, Fraud, Large Loss, and Defendant PI."
+twitterUrl: "https://www.zebra.law/"
+twitterTitle: "Zebra Law | A new breed of legal consultants"
+twitterDescription: "Tech oriented, boutique legal firm offering innovative services for the Insurance Sector. Specialists in MGA Insurance, Telematics, Fraud, Large Loss, and Defendant PI."
+twitterImage: "https://www.zebra.law/images/OG_image.png"
+permalink: "index.html"
+---
       <section class="hero home-hero" id="about">
         <div class="hero-slideshow" id="hero-slideshow">
           <!-- Slides generated dynamically by JavaScript -->
@@ -84,7 +37,7 @@
             </span>
           </p>
           <a class="hero-scroll" href="#services" aria-label="Scroll to innovation section">
-            <span>↓</span>
+            <span>&darr;</span>
           </a>
         </div>
       </section>
@@ -106,7 +59,7 @@
         </div>
         <div class="container services-preview">
           <div class="services-left">
-            <a class="service-tile" href="services.html">
+            <a class="service-tile" href="/services.html">
               <div class="service-photo photo-fraud" role="img" aria-label="Fraud">
                 <span>Fraud</span>
                 <div class="service-overlay">
@@ -122,12 +75,8 @@
           </div>
           <div class="services-right">
             <div class="services-images">
-              <a class="service-tile" href="services.html">
-                <div
-                  class="service-photo photo-connected"
-                  role="img"
-                  aria-label="Connected Vehicle / Automation"
-                >
+              <a class="service-tile" href="/services.html">
+                <div class="service-photo photo-connected" role="img" aria-label="Connected Vehicle / Automation">
                   <span>Connected Vehicle / Automation</span>
                   <div class="service-overlay">
                     <h4>Connected Vehicle / Automation</h4>
@@ -139,12 +88,8 @@
                   </div>
                 </div>
               </a>
-              <a class="service-tile" href="services.html">
-                <div
-                  class="service-photo photo-catastrophic"
-                  role="img"
-                  aria-label="Catastrophic / Large Loss"
-                >
+              <a class="service-tile" href="/services.html">
+                <div class="service-photo photo-catastrophic" role="img" aria-label="Catastrophic / Large Loss">
                   <span>Catastrophic / Large Loss</span>
                   <div class="service-overlay">
                     <h4>Catastrophic / Large Loss</h4>
@@ -164,7 +109,7 @@
                 cutting-edge services tailored to the needs of the Insurance Sector, particularly
                 the dynamic MGA market.
               </p>
-              <a class="link-arrow" href="services.html">See all our services →</a>
+              <a class="link-arrow" href="/services.html">See all our services &rarr;</a>
             </div>
           </div>
         </div>
@@ -182,27 +127,27 @@
           </p>
         </div>
         <div class="container team-grid">
-          <a class="team-card" href="team/colin-bushell.html">
+          <a class="team-card" href="/team/colin-bushell.html">
             <div class="team-photo photo-colin" role="img" aria-label="Colin Bushell"></div>
             <h3>Colin Bushell</h3>
             <p>Co-Founder &amp; Director</p>
           </a>
-          <a class="team-card" href="team/sunil-nannar.html">
+          <a class="team-card" href="/team/sunil-nannar.html">
             <div class="team-photo photo-sunil" role="img" aria-label="Sunil Nannar"></div>
             <h3>Sunil Nannar</h3>
             <p>Co-Founder &amp; Director</p>
           </a>
-          <a class="team-card" href="team/kash-rafiq.html">
+          <a class="team-card" href="/team/kash-rafiq.html">
             <div class="team-photo photo-kash" role="img" aria-label="Kash Rafiq"></div>
             <h3>Kash Rafiq</h3>
             <p>Solicitor</p>
           </a>
-          <a class="team-card" href="team/chris-bakker.html">
+          <a class="team-card" href="/team/chris-bakker.html">
             <div class="team-photo photo-chris" role="img" aria-label="Chris Bakker"></div>
             <h3>Chris Bakker</h3>
             <p>Solicitor</p>
           </a>
-          <a class="team-card" href="team/joanna-nannar.html">
+          <a class="team-card" href="/team/joanna-nannar.html">
             <div class="team-photo photo-joanna" role="img" aria-label="Joanna Nannar"></div>
             <h3>Joanna Nannar</h3>
             <p>Solicitor</p>
@@ -216,7 +161,7 @@
         </div>
         <div class="container values-grid">
           <div class="value-card">
-            <div class="value-icon">✓</div>
+            <div class="value-icon">&check;</div>
             <h3>Integrity</h3>
             <p>
               A cornerstone of everything we do. It&apos;s about upholding the highest standards of
@@ -224,24 +169,24 @@
             </p>
           </div>
           <div class="value-card">
-            <div class="value-icon">◔</div>
+            <div class="value-icon">&#9684;</div>
             <h3>Diversity &amp; Inclusion</h3>
             <p>
-              We know that our differences make us stronger. It’s not just about race or gender,
+              We know that our differences make us stronger. It's not just about race or gender,
               it&apos;s about embracing a multitude of perspectives, experiences, and backgrounds.
             </p>
           </div>
           <div class="value-card">
-            <div class="value-icon">◻</div>
+            <div class="value-icon">&#9723;</div>
             <h3>Innovation</h3>
             <p>
-              Innovation is at the heart of everything we do. It’s about challenging the status
+              Innovation is at the heart of everything we do. It's about challenging the status
               quo, pushing boundaries, and exploring the unconventional to find new and better ways
               of doing things.
             </p>
           </div>
           <div class="value-card">
-            <div class="value-icon">◎</div>
+            <div class="value-icon">&#9678;</div>
             <h3>Customer-Centricity</h3>
             <p>
               Our customers are at the heart of everything we do. We prioritise their needs,
@@ -250,7 +195,7 @@
             </p>
           </div>
           <div class="value-card">
-            <div class="value-icon">◌</div>
+            <div class="value-icon">&#9676;</div>
             <h3>Collaboration</h3>
             <p>
               We believe in the power of teamwork, communication, and mutual support. At Zebra, we
@@ -258,7 +203,7 @@
             </p>
           </div>
           <div class="value-card">
-            <div class="value-icon">★</div>
+            <div class="value-icon">&starf;</div>
             <h3>Excellence</h3>
             <p>
               We strive for excellence in everything we do, from the quality of our products and
@@ -284,8 +229,8 @@
           <div class="quote-overlay"></div>
           <div class="quote-content">
             <p class="quote-text">
-              “Zebra is different to its core. <br>  We empower our people to defy convention &amp;
-              champion outcomes that redefine success”
+              "Zebra is different to its core. <br>  We empower our people to defy convention &amp;
+              champion outcomes that redefine success"
             </p>
             <p class="quote-author">Colin Bushell, Co-Founder &amp; Director</p>
           </div>
@@ -329,22 +274,22 @@
           <h2 class="center-title">Strategic partnerships</h2>
           <div class="logo-row">
             <a href="https://www.insurancefraudbureau.org/en" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/ifb.png" alt="Insurance Fraud Bureau" class="partner-logo">
+              <img src="/images/ifb.png" alt="Insurance Fraud Bureau" class="partner-logo">
             </a>
             <a href="https://www.synectics-solutions.com/what-we-do/national-sira" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/national_sira.png" alt="National SIRA" class="partner-logo">
+              <img src="/images/national_sira.png" alt="National SIRA" class="partner-logo">
             </a>
             <a href="https://complianceoffice.co.uk/" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/compliance_office.png" alt="Compliance Office" class="partner-logo">
+              <img src="/images/compliance_office.png" alt="Compliance Office" class="partner-logo">
             </a>
             <a href="https://ifig.org/" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/ifig.png" alt="IFIG" class="partner-logo">
+              <img src="/images/ifig.png" alt="IFIG" class="partner-logo">
             </a>
             <a href="https://www.lexisnexis.co.uk/" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/lexis_nexis.png" alt="LexisNexis" class="partner-logo">
+              <img src="/images/lexis_nexis.png" alt="LexisNexis" class="partner-logo">
             </a>
             <a href="https://www.imba-dynamics.com/" target="_blank" rel="noopener" class="partner-link">
-              <img src="images/imba_dynamics.png" alt="IMBA Dynamics" class="partner-logo">
+              <img src="/images/imba_dynamics.png" alt="IMBA Dynamics" class="partner-logo">
             </a>
           </div>
         </div>
@@ -356,7 +301,7 @@
           <div class="contact-content">
             <h2>Get in Touch</h2>
             <p>
-              If you think we could help you with something, then why not get in touch. We’re around
+              If you think we could help you with something, then why not get in touch. We're around
               Monday to Friday, 9am to 5pm.
             </p>
             <ul class="contact-list light">
@@ -364,14 +309,14 @@
                 <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
-                <span>+44 (0) 161 605 6030</span>
+                <span>{{ site.phone }}</span>
               </li>
               <li class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <rect x="2" y="4" width="20" height="16" rx="2"/>
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
                 </svg>
-                <span>enquiry@zebra.law</span>
+                <span>{{ site.email }}</span>
               </li>
               <li class="contact-item">
                 <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -379,11 +324,11 @@
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
                 <span>
-                  Zebra Law<br>
-                  Blackbox, Beech Lane,<br>
-                  Wilmslow, Cheshire<br>
-                  United Kingdom<br>
-                  SK9 5ER
+                  {{ site.address.line1 }}<br>
+                  {{ site.address.line2 }}<br>
+                  {{ site.address.line3 }}<br>
+                  {{ site.address.line4 }}<br>
+                  {{ site.address.postcode }}
                 </span>
               </li>
               <li class="contact-item">
@@ -391,74 +336,9 @@
                   <circle cx="12" cy="12" r="10"/>
                   <path d="m9 12 2 2 4-4"/>
                 </svg>
-                <span>SRA Registration Number - 8003681</span>
+                <span>SRA Registration Number - {{ site.sraNumber }}</span>
               </li>
             </ul>
           </div>
         </div>
       </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <img src="logo/Zebra Logo.png" alt="Zebra Law" class="footer-logo-img">
-          <p class="footer-tagline">A new breed of legal consultants</p>
-          <div class="sra-badge">
-            <iframe src="https://cdn.yoshki.com/iframe/55849r.html" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
-          </div>
-        </div>
-        <div class="footer-company">
-          <h4>Company</h4>
-          <a href="pdfs/complaints_procedure.pdf" target="_blank" rel="noopener">Complaints</a>
-          <a href="https://www.linkedin.com/company/zebralaw/" target="_blank" rel="noopener">Careers</a>
-        </div>
-        <div class="footer-legal">
-          <h4>Legal</h4>
-          <a href="pdfs/cookie_policy.pdf" target="_blank" rel="noopener">Cookie Policy</a>
-          <a href="pdfs/human_rights_modern_slavery.pdf" target="_blank" rel="noopener">Human Rights &amp; Slavery</a>
-          <a href="pdfs/privacy_policy.pdf" target="_blank" rel="noopener">Privacy Policy</a>
-          <a href="pdfs/terms_of_business.pdf" target="_blank" rel="noopener">Terms of Business</a>
-          <a href="pdfs/terms_of_use.pdf" target="_blank" rel="noopener">Terms of Use</a>
-        </div>
-        <div class="footer-nav">
-          <h4>Navigation</h4>
-          <a href="services.html">Services</a>
-          <a href="siu.html">SIU</a>
-          <a href="news.html">News</a>
-          <a href="#values">Our Values</a>
-          <a href="#team">Meet the Team</a>
-          <a href="#insights">About Us</a>
-          <a href="#contact">Get In Touch</a>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p class="footer-copyright">© Zebra Law Ltd. All rights reserved.</p>
-        <p class="footer-registration">
-          Zebra Law Ltd, registered in England and Wales Company Number - 14541910. Registered
-          Address – Blackbox, Beech Lane, Wilmslow, SK9 5ER
-        </p>
-      </div>
-    </footer>
-
-    <!-- Back to Top Button (mobile only) -->
-    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="18 15 12 9 6 15"></polyline>
-      </svg>
-    </button>
-
-    <div class="cookie-banner" id="cookie-banner">
-      <div class="cookie-content">
-        <p>We use cookies to enhance your browsing experience and analyse our traffic. You can accept all cookies, allow only necessary cookies, or reject non-essential cookies. <a href="pdfs/cookie_policy.pdf" target="_blank" rel="noopener">Read our Cookie Policy</a></p>
-        <div class="cookie-buttons">
-          <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept All</button>
-          <button class="cookie-btn cookie-btn-necessary" id="cookie-necessary">Necessary Only</button>
-          <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Reject All</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="script.min.js"></script>
-  </body>
-</html>

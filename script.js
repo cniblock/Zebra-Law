@@ -188,6 +188,31 @@ if (cookieReject) {
   });
 }
 
+// News Category Filters
+const newsFilters = document.querySelectorAll(".news-filter");
+const newsCards = document.querySelectorAll(".news-box[data-category]");
+
+if (newsFilters.length > 0) {
+  newsFilters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      const category = filter.dataset.filter;
+
+      // Update active filter
+      newsFilters.forEach((f) => f.classList.remove("active"));
+      filter.classList.add("active");
+
+      // Filter cards
+      newsCards.forEach((card) => {
+        if (category === "all" || card.dataset.category === category) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+}
+
 // Scroll Animations using Intersection Observer
 function initScrollAnimations() {
   const animatedElements = document.querySelectorAll(

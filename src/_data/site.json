@@ -1,0 +1,19 @@
+{
+  "name": "Zebra Law",
+  "url": "https://www.zebra.law",
+  "tagline": "A new breed of legal consultants",
+  "description": "Zebra Law is a tech oriented, boutique legal firm offering innovative services designed to support the Insurance Sector, especially the disruptive MGA market.",
+  "ogImage": "https://www.zebra.law/images/OG_image.png",
+  "linkedin": "https://www.linkedin.com/company/zebralaw/",
+  "phone": "+44 (0) 161 605 6030",
+  "email": "enquiry@zebra.law",
+  "sraNumber": "8003681",
+  "companyNumber": "14541910",
+  "address": {
+    "line1": "Zebra Law",
+    "line2": "Blackbox, Beech Lane,",
+    "line3": "Wilmslow, Cheshire",
+    "line4": "United Kingdom",
+    "postcode": "SK9 5ER"
+  }
+}

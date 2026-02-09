@@ -1,0 +1,9 @@
+[build]
+  command = "npx @11ty/eleventy"
+  publish = "_site"
+
+# Redirect /admin to /admin/ for Decap CMS
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301

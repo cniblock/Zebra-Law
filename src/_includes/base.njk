@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+
+    <!-- Primary Meta Tags -->
+    {% if description %}<meta name="description" content="{{ description }}">{% endif %}
+    {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
+    <meta name="author" content="Zebra Law Ltd">
+    <meta name="robots" content="index, follow">
+    {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+
+    {% if geoRegion %}
+    <!-- Geographic Tags -->
+    <meta name="geo.region" content="{{ geoRegion | default('GB') }}">
+    <meta name="geo.placename" content="{{ geoPlace | default('Wilmslow, Cheshire') }}">
+    {% if geoPosition %}<meta name="geo.position" content="{{ geoPosition }}">{% endif %}
+    {% if icbm %}<meta name="ICBM" content="{{ icbm }}">{% endif %}
+    {% endif %}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ ogType | default('website') }}">
+    {% if ogUrl %}<meta property="og:url" content="{{ ogUrl }}">{% endif %}
+    <meta property="og:title" content="{{ ogTitle | default(title) }}">
+    <meta property="og:description" content="{{ ogDescription | default(description) }}">
+    <meta property="og:image" content="{{ ogImage | default(site.ogImage) }}">
+    <meta property="og:site_name" content="Zebra Law">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    {% if twitterUrl %}<meta name="twitter:url" content="{{ twitterUrl }}">{% endif %}
+    <meta name="twitter:title" content="{{ twitterTitle | default(ogTitle | default(title)) }}">
+    <meta name="twitter:description" content="{{ twitterDescription | default(ogDescription | default(description)) }}">
+    {% if twitterImage %}<meta name="twitter:image" content="{{ twitterImage }}">{% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/index.html"><img src="/logo/Zebra Logo.png" alt="Zebra Law" class="logo-img"></a>
+        <nav class="nav" id="site-nav" aria-label="Primary">
+          <a href="/services.html">Services</a>
+          <a href="/siu.html">SIU</a>
+          <a href="/news.html">News</a>
+          {% if page.url == "/" %}
+          <a href="#team">Meet the Team</a>
+          <a class="button header-cta" href="#contact">Get in Touch</a>
+          {% else %}
+          <a href="/index.html#team">Meet the Team</a>
+          <a class="button header-cta" href="/index.html#contact">Get in Touch</a>
+          {% endif %}
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{{ content | safe }}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="/logo/Zebra Logo.png" alt="Zebra Law" class="footer-logo-img">
+          <p class="footer-tagline">A new breed of legal consultants</p>
+          <div class="sra-badge">
+            <iframe src="https://cdn.yoshki.com/iframe/55849r.html" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+          </div>
+        </div>
+        <div class="footer-company">
+          <h4>Company</h4>
+          <a href="/pdfs/complaints_procedure.pdf" target="_blank" rel="noopener">Complaints</a>
+          <a href="https://www.linkedin.com/company/zebralaw/" target="_blank" rel="noopener">Careers</a>
+        </div>
+        <div class="footer-legal">
+          <h4>Legal</h4>
+          <a href="/pdfs/cookie_policy.pdf" target="_blank" rel="noopener">Cookie Policy</a>
+          <a href="/pdfs/human_rights_modern_slavery.pdf" target="_blank" rel="noopener">Human Rights &amp; Slavery</a>
+          <a href="/pdfs/privacy_policy.pdf" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="/pdfs/terms_of_business.pdf" target="_blank" rel="noopener">Terms of Business</a>
+          <a href="/pdfs/terms_of_use.pdf" target="_blank" rel="noopener">Terms of Use</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <a href="/services.html">Services</a>
+          <a href="/siu.html">SIU</a>
+          <a href="/news.html">News</a>
+          {% if page.url == "/" %}
+          <a href="#values">Our Values</a>
+          <a href="#team">Meet the Team</a>
+          <a href="#insights">About Us</a>
+          <a href="#contact">Get In Touch</a>
+          {% else %}
+          <a href="/index.html#values">Our Values</a>
+          <a href="/index.html#team">Meet the Team</a>
+          <a href="/index.html#insights">About Us</a>
+          <a href="/index.html#contact">Get In Touch</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p class="footer-copyright">&copy; Zebra Law Ltd. All rights reserved.</p>
+        <p class="footer-registration">
+          Zebra Law Ltd, registered in England and Wales Company Number - 14541910. Registered
+          Address &ndash; Blackbox, Beech Lane, Wilmslow, SK9 5ER
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button (mobile only) -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <div class="cookie-banner" id="cookie-banner">
+      <div class="cookie-content">
+        <p>We use cookies to enhance your browsing experience and analyse our traffic. You can accept all cookies, allow only necessary cookies, or reject non-essential cookies. <a href="/pdfs/cookie_policy.pdf" target="_blank" rel="noopener">Read our Cookie Policy</a></p>
+        <div class="cookie-buttons">
+          <button class="cookie-btn cookie-btn-accept" id="cookie-accept">Accept All</button>
+          <button class="cookie-btn cookie-btn-necessary" id="cookie-necessary">Necessary Only</button>
+          <button class="cookie-btn cookie-btn-reject" id="cookie-reject">Reject All</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.min.js"></script>
+    <!-- Netlify Identity Widget (handles CMS login redirects) -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function(user) {
+          if (!user) {
+            window.netlifyIdentity.on("login", function() {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

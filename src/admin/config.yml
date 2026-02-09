@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images are stored
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "news"
+    label: "News Articles"
+    label_singular: "News Article"
+    folder: "src/news"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "md"
+    editor:
+      preview: false
+    sortable_fields: ["date", "articleTitle"]
+    view_filters:
+      - label: "General"
+        field: category
+        pattern: "general"
+      - label: "Industry"
+        field: category
+        pattern: "industry"
+      - label: "People"
+        field: category
+        pattern: "people"
+    fields:
+      - { label: "Article Title", name: "articleTitle", widget: "string", hint: "The main headline shown on the article and news grid" }
+      - { label: "Page Title", name: "title", widget: "string", hint: "Browser tab title, e.g. 'Article Name | Zebra Law'" }
+      - { label: "Description", name: "description", widget: "text", hint: "SEO meta description (1-2 sentences)" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Category", name: "category", widget: "select", options: ["general", "industry", "people"] }
+      - { label: "Hero Image", name: "image", widget: "string", hint: "Image filename from /images folder, e.g. zebra_banner_image_1.jpg" }
+      - { label: "Image Alt Text", name: "imageAlt", widget: "string", required: false, hint: "Describe the image for accessibility" }
+      - { label: "OG Image URL", name: "ogImage", widget: "string", required: false, hint: "Full URL for social sharing, e.g. https://www.zebra.law/images/photo.jpg" }
+      - label: "Related Articles"
+        name: "related"
+        widget: "list"
+        required: false
+        hint: "Add slugs of related articles (the filename without .md)"
+        fields:
+          - { label: "Article Slug", name: "slug", widget: "string", hint: "e.g. insurance-fraud-2026" }
+      - { label: "Body", name: "body", widget: "markdown" }

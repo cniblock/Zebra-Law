@@ -1,0 +1,26 @@
+{
+  "name": "zebra_website",
+  "version": "1.0.0",
+  "description": "A modern, responsive website for Zebra Law - a tech oriented, boutique legal firm specialising in the Insurance Sector.",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "dev": "npx @11ty/eleventy --serve --watch",
+    "clean": "rimraf _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cniblock/Zebra-Law.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cniblock/Zebra-Law/issues"
+  },
+  "homepage": "https://github.com/cniblock/Zebra-Law#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: "News | Zebra Law"
+description: "Latest news, insights and updates from Zebra Law. Stay informed about developments in insurance law, fraud prevention, telematics, and the MGA market."
+keywords: "Zebra Law News, Insurance Law Updates, MGA Market News, Fraud Prevention, Telematics, Legal Industry News, Defendant PI"
+canonical: "https://www.zebra.law/news"
+geoRegion: "GB"
+geoPlace: "Wilmslow, Cheshire"
+ogUrl: "https://www.zebra.law/news"
+ogTitle: "News | Zebra Law"
+ogDescription: "Latest news, insights and updates from Zebra Law. Stay informed about developments in insurance law, fraud prevention, telematics, and the MGA market."
+twitterUrl: "https://www.zebra.law/news"
+twitterTitle: "News | Zebra Law"
+twitterDescription: "Latest news, insights and updates from Zebra Law. Stay informed about developments in insurance law, fraud prevention, telematics, and the MGA market."
+twitterImage: "https://www.zebra.law/images/OG_image.png"
+permalink: "news.html"
+---
+      <section class="page-hero services-hero">
+        <div class="container">
+          <h1>News &amp; Insights</h1>
+          <p class="page-hero-subtitle">Stay up to date with the latest from Zebra Law</p>
+          <div class="hero-scroll" aria-hidden="true">
+            <span>&darr;</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section news-section">
+        <div class="container">
+          <div class="news-filters">
+            <button class="news-filter active" data-filter="all">All</button>
+            <button class="news-filter" data-filter="general">General</button>
+            <button class="news-filter" data-filter="industry">Industry</button>
+            <button class="news-filter" data-filter="people">People</button>
+          </div>
+
+          <div class="news-grid-boxes">
+            {%- for article in collections.news -%}
+            <a class="news-box news-box-image" href="{{ article.url }}" data-category="{{ article.data.category }}" style="background-image: url('/images/{{ article.data.image }}')">
+              <div class="news-box-overlay"></div>
+              <div class="news-box-content">
+                <span class="news-tag news-tag-{{ article.data.category }}">{{ article.data.category | capitalize }}</span>
+                <h2>{{ article.data.articleTitle }}</h2>
+                <span class="news-box-date">{{ article.date | dateDisplay }}</span>
+              </div>
+            </a>
+            {%- endfor -%}
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container center-cta">
+          <h2>Want to stay informed?</h2>
+          <p>Get in touch to learn more about what we do.</p>
+          <a class="button" href="/index.html#contact">Get in touch</a>
+        </div>
+      </section>
