@@ -1282,13 +1282,19 @@ h4 {
 }
 
 .service-tile:hover .service-overlay,
-.service-tile:focus-visible .service-overlay {
+.service-tile:focus-visible .service-overlay,
+.service-tile.touch-active .service-overlay {
   opacity: 1;
 }
 
 .service-tile:hover .service-photo > span,
-.service-tile:focus-visible .service-photo > span {
+.service-tile:focus-visible .service-photo > span,
+.service-tile.touch-active .service-photo > span {
   opacity: 0;
+}
+
+.service-tile.touch-active .service-tap-hint {
+  display: none;
 }
 
 .services-copy {

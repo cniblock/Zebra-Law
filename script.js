@@ -352,8 +352,36 @@ function autoAddAnimations() {
   });
 }
 
+// Mobile two-tap service tiles: first tap reveals overlay, second tap navigates
+function initMobileServiceTiles() {
+  if (window.matchMedia("(hover: none)").matches === false) return;
+
+  let activeTile = null;
+
+  document.querySelectorAll(".service-tile").forEach((tile) => {
+    tile.addEventListener("click", function (e) {
+      if (activeTile === this) return;
+
+      e.preventDefault();
+      if (activeTile) {
+        activeTile.classList.remove("touch-active");
+      }
+      this.classList.add("touch-active");
+      activeTile = this;
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (activeTile && !activeTile.contains(e.target)) {
+      activeTile.classList.remove("touch-active");
+      activeTile = null;
+    }
+  });
+}
+
 // Run on DOM ready
 document.addEventListener("DOMContentLoaded", () => {
   autoAddAnimations();
   initScrollAnimations();
+  initMobileServiceTiles();
 });
