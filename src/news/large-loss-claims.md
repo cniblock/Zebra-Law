@@ -10,7 +10,6 @@ image: zebra_largeloss.jpg
 imageAlt: Large loss and catastrophic claims management
 ogImage: https://www.zebra.law/images/zebra_largeloss.jpg
 related:
-  - slug: kash-rafiq-complex-litigation
   - slug: siu-expands-services
 ---
 
