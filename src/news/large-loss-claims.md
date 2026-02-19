@@ -1,12 +1,14 @@
 ---
-articleTitle: "Zebra's approach to catastrophic and large loss claims management"
-title: "Zebra's approach to catastrophic and large loss claims management | Zebra Law"
-description: "How Zebra Law manages catastrophic and large loss claims with a crisis-response mindset, combining compassion with telematics-supported investigation."
-date: 2025-12-01
+articleTitle: Zebra's approach to catastrophic and large loss claims management
+title: Zebra's approach to catastrophic and large loss claims management | Zebra Law
+description: How Zebra Law manages catastrophic and large loss claims with a
+  crisis-response mindset, combining compassion with telematics-supported
+  investigation.
+date: 2025-03-10
 category: general
 image: zebra_largeloss.jpg
-imageAlt: "Large loss and catastrophic claims management"
-ogImage: "https://www.zebra.law/images/zebra_largeloss.jpg"
+imageAlt: Large loss and catastrophic claims management
+ogImage: https://www.zebra.law/images/zebra_largeloss.jpg
 related:
   - slug: kash-rafiq-complex-litigation
   - slug: siu-expands-services
