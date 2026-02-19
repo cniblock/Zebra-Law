@@ -1,12 +1,14 @@
 ---
-articleTitle: "How data analytics is reshaping risk profiling for the MGA insurance market"
-title: "How data analytics is reshaping risk profiling for the MGA insurance market | Zebra Law"
-description: "Exploring how advanced data analytics and predictive models are transforming risk profiling and underwriting across the MGA insurance market."
-date: 2025-11-20
+articleTitle: How data analytics is reshaping risk profiling for the MGA insurance market
+title: How data analytics is reshaping risk profiling for the MGA insurance
+  market | Zebra Law
+description: Exploring how advanced data analytics and predictive models are
+  transforming risk profiling and underwriting across the MGA insurance market.
+date: 2024-11-04
 category: industry
 image: complex.jpg
-imageAlt: "Data analytics and risk profiling in insurance"
-ogImage: "https://www.zebra.law/images/complex.jpg"
+imageAlt: Data analytics and risk profiling in insurance
+ogImage: https://www.zebra.law/images/complex.jpg
 related:
   - slug: telematics-fraud-detection
   - slug: connected-vehicles-claims
