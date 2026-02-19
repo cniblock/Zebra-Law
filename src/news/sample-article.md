@@ -1,12 +1,13 @@
 ---
-articleTitle: "Zebra Law launches redesigned website"
-title: "Zebra Law launches redesigned website | Zebra Law"
-description: "Zebra Law is pleased to announce the launch of our newly redesigned website, reflecting our commitment to innovation."
-date: 2026-02-09
+articleTitle: Zebra Law launches redesigned website
+title: Zebra Law launches redesigned website | Zebra Law
+description: Zebra Law is pleased to announce the launch of our newly redesigned
+  website, reflecting our commitment to innovation.
+date: 2026-02-20
 category: general
 image: zebra_banner_image_1.jpg
-imageAlt: "Zebra Law office"
-ogImage: "https://www.zebra.law/images/zebra_banner_image_1.jpg"
+imageAlt: Zebra Law office
+ogImage: https://www.zebra.law/images/zebra_banner_image_1.jpg
 related:
   - slug: insurance-fraud-2026
   - slug: colin-bushell-mga-partnerships
