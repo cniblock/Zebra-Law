@@ -884,25 +884,27 @@ h4 {
   padding-top: 60px;
 }
 
-.siu-intro-text {
-  max-width: 1000px;
-  margin: 0 auto;
+.siu-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(400px, 1.2fr);
+  gap: 60px;
+  align-items: start;
 }
 
-.siu-intro-text h2 {
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  margin-bottom: 20px;
+.siu-intro-left h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.25;
 }
 
-.siu-intro-text p {
+.siu-intro-right p {
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.7;
   text-align: justify;
 }
 
-.siu-intro-text p + p {
-  margin-top: 14px;
+.siu-intro-right p + p {
+  margin-top: 20px;
 }
 
 .siu-grid {
@@ -1954,7 +1956,8 @@ h4 {
   .innovation-grid,
   .services-preview,
   .focus-grid,
-  .profile-grid {
+  .profile-grid,
+  .siu-intro-grid {
     grid-template-columns: 1fr;
   }
 
