@@ -1,12 +1,14 @@
 ---
-articleTitle: "The evolving landscape of insurance fraud in 2026"
-title: "The evolving landscape of insurance fraud in 2026 | Zebra Law"
-description: "An overview of emerging fraud trends across the MGA market and how technology-driven approaches are reshaping detection and prevention strategies."
-date: 2026-02-03
+articleTitle: The evolving landscape of insurance fraud in 2026
+title: The evolving landscape of insurance fraud in 2026 | Zebra Law
+description: An overview of emerging fraud trends across the MGA market and how
+  technology-driven approaches are reshaping detection and prevention
+  strategies.
+date: 2026-01-05
 category: industry
 image: fraud.jpg
-imageAlt: "Insurance fraud investigation"
-ogImage: "https://www.zebra.law/images/fraud.jpg"
+imageAlt: Insurance fraud investigation
+ogImage: https://www.zebra.law/images/fraud.jpg
 related:
   - slug: telematics-fraud-detection
   - slug: siu-expands-services
