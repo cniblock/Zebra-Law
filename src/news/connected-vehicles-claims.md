@@ -1,12 +1,15 @@
 ---
-articleTitle: "Connected vehicles and the future of claims management in the UK insurance sector"
-title: "Connected vehicles and the future of claims management in the UK insurance sector | Zebra Law"
-description: "How connected vehicle technology and ECU data are transforming claims management and fraud detection across the UK insurance sector."
-date: 2026-01-14
+articleTitle: Connected vehicles and the future of claims management in the UK
+  insurance sector
+title: Connected vehicles and the future of claims management in the UK
+  insurance sector | Zebra Law
+description: How connected vehicle technology and ECU data are transforming
+  claims management and fraud detection across the UK insurance sector.
+date: 2025-11-17
 category: industry
 image: zebra_vehicle.jpg
-imageAlt: "Connected vehicle technology and insurance claims"
-ogImage: "https://www.zebra.law/images/connected-vehicle.jpg"
+imageAlt: Connected vehicle technology and insurance claims
+ogImage: https://www.zebra.law/images/connected-vehicle.jpg
 related:
   - slug: telematics-fraud-detection
   - slug: data-analytics-risk-profiling
