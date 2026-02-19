@@ -1,12 +1,14 @@
 ---
 articleTitle: "Telematics data: transforming fraud detection for MGAs"
 title: "Telematics data: transforming fraud detection for MGAs | Zebra Law"
-description: "How telematics technology and vehicle data analysis are transforming fraud detection capabilities for managing general agents in the insurance market."
-date: 2025-12-18
+description: How telematics technology and vehicle data analysis are
+  transforming fraud detection capabilities for managing general agents in the
+  insurance market.
+date: 2025-08-04
 category: industry
 image: connected-vehicle.jpg
-imageAlt: "Telematics data and fraud detection technology"
-ogImage: "https://www.zebra.law/images/connected-vehicle.jpg"
+imageAlt: Telematics data and fraud detection technology
+ogImage: https://www.zebra.law/images/connected-vehicle.jpg
 related:
   - slug: insurance-fraud-2026
   - slug: connected-vehicles-claims
