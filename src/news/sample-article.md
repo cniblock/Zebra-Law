@@ -16,7 +16,7 @@ We are pleased to announce the launch of our newly redesigned website, reflectin
 
 The new site showcases our full range of services, including our specialist fraud investigation capabilities through Zebra SIU, our expertise in connected vehicles and telematics, and our dedicated approach to catastrophic and large loss claims.
 
-As a tech-oriented boutique legal firm, we believe our digital presence should reflect the same standards of excellence and innovation that we bring to our legal practice. The redesigned website offers improved navigation, a cleaner layout, and better access to information about our team and the services we provide.
+As a tech-oriented boutique legal firm, we believe our digital presence should reflect the same standards of excellence and innovation that we bring to our legal practice. The redesigned website offers improved navigation, a cleaner layout, better access to information about our team and the services we provide, and a dedicated News & Insights section to keep our clients and partners informed on the latest developments across the industry.
 
 Colin Bushell, Co-Founder &amp; Director, commented:
 
