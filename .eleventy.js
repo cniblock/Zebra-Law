@@ -46,6 +46,13 @@ module.exports = function (eleventyConfig) {
     return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
   });
 
+  // LinkedIn share URL — opens LinkedIn with article URL pre-filled for user to post
+  eleventyConfig.addFilter("linkedInShareUrl", function (path) {
+    const base = "https://www.zebra.law";
+    const fullUrl = path.startsWith("http") ? path : base + path;
+    return "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent(fullUrl);
+  });
+
   return {
     dir: {
       input: "src",

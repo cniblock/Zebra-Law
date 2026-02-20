@@ -542,6 +542,17 @@ h4 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+@media (max-width: 768px) {
+  .siu-hero {
+    justify-content: center;
+  }
+
+  .siu-hero-content {
+    padding: 0 24px 30px;
+    text-align: left;
+  }
+}
+
 /* News Page */
 .news-section {
   padding-top: 20px;
@@ -2071,7 +2082,6 @@ h4 {
 
   .services-hero h1 {
     font-size: clamp(1.8rem, 5vw, 2.4rem);
-    padding: 0 10px;
   }
 
   .page-hero {
