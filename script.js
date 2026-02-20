@@ -34,14 +34,15 @@ if (navToggle && nav) {
   ];
   // ============================================
 
-  const imagePath = "images/hero-banner-images/";
+  const imagePath = "/images/hero-banner-images/";
   const slideInterval = 10000; // 10 seconds
 
   // Generate slide elements (lazy-load: only first gets backgroundImage, others load on demand)
-  heroImages.forEach((img, index) => {
+  heroImages.forEach((img) => {
     const slide = document.createElement("div");
     slide.className = "hero-slide";
     slide.dataset.bg = `url('${imagePath}${img}')`;
+    slide.dataset.src = imagePath + img;
     slideshow.appendChild(slide);
   });
 
@@ -58,10 +59,22 @@ if (navToggle && nav) {
   }
 
   function loadSlideBg(slide) {
-    if (slide.dataset.bg && !slide.dataset.loaded) {
+    if (!slide.dataset.src || slide.dataset.loaded) return;
+    const src = slide.dataset.src;
+    const img = new Image();
+    img.onload = function () {
       slide.style.backgroundImage = slide.dataset.bg;
       slide.dataset.loaded = "1";
-    }
+    };
+    img.onerror = function () {
+      if (!slide.dataset.retried) {
+        slide.dataset.retried = "1";
+        setTimeout(function () { loadSlideBg(slide); }, 1000);
+      } else {
+        slide.dataset.loaded = "1";
+      }
+    };
+    img.src = src;
   }
 
   // Create randomized order
@@ -389,9 +402,25 @@ function initMobileServiceTiles() {
   });
 }
 
+function initImageRetry() {
+  document.querySelectorAll("img[src]").forEach((img) => {
+    img.addEventListener("error", function () {
+      if (!this.dataset.retried && this.src) {
+        this.dataset.retried = "1";
+        const src = this.src;
+        setTimeout(() => {
+          this.src = "";
+          this.src = src;
+        }, 500);
+      }
+    });
+  });
+}
+
 // Run on DOM ready
 document.addEventListener("DOMContentLoaded", () => {
   autoAddAnimations();
   initScrollAnimations();
   initMobileServiceTiles();
+  initImageRetry();
 });
