@@ -1047,9 +1047,7 @@ h4 {
   aspect-ratio: 3 / 4;
   border-radius: 8px;
   background: #d9d9d9;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  overflow: hidden;
   transition: transform 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   will-change: transform;
@@ -1057,28 +1055,16 @@ h4 {
   backface-visibility: hidden;
 }
 
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .team-card:hover .team-photo {
   transform: scale(1.03) translateZ(0);
-}
-
-.photo-colin {
-  background-image: url("images/zebra_team_colin.jpg");
-}
-
-.photo-sunil {
-  background-image: url("images/zebra_team_sunil.jpg");
-}
-
-.photo-kash {
-  background-image: url("images/zebra_team_kash.jpg");
-}
-
-.photo-chris {
-  background-image: url("images/zebra_team_chris.jpg");
-}
-
-.photo-joanna {
-  background-image: url("images/zebra_team_jo.jpg");
 }
 
 .center-header {

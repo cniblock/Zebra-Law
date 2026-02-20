@@ -37,11 +37,11 @@ if (navToggle && nav) {
   const imagePath = "images/hero-banner-images/";
   const slideInterval = 10000; // 10 seconds
 
-  // Generate slide elements
+  // Generate slide elements (lazy-load: only first gets backgroundImage, others load on demand)
   heroImages.forEach((img, index) => {
     const slide = document.createElement("div");
-    slide.className = "hero-slide" + (index === 0 ? " active" : "");
-    slide.style.backgroundImage = `url('${imagePath}${img}')`;
+    slide.className = "hero-slide";
+    slide.dataset.bg = `url('${imagePath}${img}')`;
     slideshow.appendChild(slide);
   });
 
@@ -57,24 +57,34 @@ if (navToggle && nav) {
     return array;
   }
 
+  function loadSlideBg(slide) {
+    if (slide.dataset.bg && !slide.dataset.loaded) {
+      slide.style.backgroundImage = slide.dataset.bg;
+      slide.dataset.loaded = "1";
+    }
+  }
+
   // Create randomized order
   let slideOrder = shuffle([...Array(slides.length).keys()]);
   let currentIndex = 0;
 
-  // Set first random slide as active
+  // Set first random slide as active and load only its image
   slides.forEach(slide => slide.classList.remove("active"));
+  loadSlideBg(slides[slideOrder[0]]);
   slides[slideOrder[0]].classList.add("active");
 
   function nextSlide() {
     slides[slideOrder[currentIndex]].classList.remove("active");
     currentIndex = (currentIndex + 1) % slideOrder.length;
-    
+
     // Reshuffle when we've shown all slides
     if (currentIndex === 0) {
       slideOrder = shuffle([...Array(slides.length).keys()]);
     }
-    
-    slides[slideOrder[currentIndex]].classList.add("active");
+
+    const nextSlideEl = slides[slideOrder[currentIndex]];
+    loadSlideBg(nextSlideEl);
+    nextSlideEl.classList.add("active");
   }
 
   // Start the slideshow

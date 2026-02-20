@@ -19,7 +19,7 @@ ogType: article
     </div>
 
     <div class="article-hero-image">
-      <img src="/images/{{ image }}" alt="{{ imageAlt | default(articleTitle) }}">
+      <img src="/images/{{ image }}" alt="{{ imageAlt | default(articleTitle) }}" loading="lazy" decoding="async">
     </div>
 
     <div class="article-body">
