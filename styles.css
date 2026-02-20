@@ -1867,6 +1867,14 @@ h4 {
   text-align: justify;
 }
 
+.profile-bio p {
+  margin-bottom: 18px;
+}
+
+.profile-bio p:last-child {
+  margin-bottom: 0;
+}
+
 .profile-highlights {
   display: flex;
   flex-direction: column;
