@@ -7,3 +7,25 @@
   from = "/admin"
   to = "/admin/"
   status = 301
+
+# Canonical URL redirects (clean URLs → .html)
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 301
+[[redirects]]
+  from = "/siu"
+  to = "/siu.html"
+  status = 301
+[[redirects]]
+  from = "/news"
+  to = "/news.html"
+  status = 301
+[[redirects]]
+  from = "/team/*"
+  to = "/team/:splat.html"
+  status = 301
+[[redirects]]
+  from = "/news/*"
+  to = "/news/:splat.html"
+  status = 301

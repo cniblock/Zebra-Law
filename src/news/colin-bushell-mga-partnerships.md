@@ -11,7 +11,6 @@ imageAlt: Colin Bushell, Co-Founder and Director of Zebra Law
 ogImage: https://www.zebra.law/images/zebra_team_colin.jpg
 related:
   - slug: sample-article
-  - slug: sunil-nannar-diversity
 ---
 With over 20 years of experience in the insurance and legal sectors, Colin Bushell has witnessed first-hand how the relationship between insurers, MGAs, and their legal partners has evolved. As Co-Founder and Director of Zebra Law, Colin has been instrumental in challenging the status quo and building a consultancy that prioritises agility, transparency, and genuine partnership over the traditional panel model.
 

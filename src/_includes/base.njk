@@ -15,7 +15,7 @@
     {% if description %}<meta name="description" content="{{ description }}">{% endif %}
     {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
     <meta name="author" content="Zebra Law Ltd">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{{ robots | default('index, follow') }}">
     {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
 
     {% if geoRegion %}
