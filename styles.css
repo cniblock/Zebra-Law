@@ -1790,9 +1790,30 @@ h4 {
   width: 100%;
   aspect-ratio: 3 / 4;
   border-radius: 0;
+  background: #d9d9d9;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+.profile-photo.photo-colin {
+  background-image: url("/images/zebra_team_colin.jpg");
+}
+
+.profile-photo.photo-sunil {
+  background-image: url("/images/zebra_team_sunil.jpg");
+}
+
+.profile-photo.photo-kash {
+  background-image: url("/images/zebra_team_kash.jpg");
+}
+
+.profile-photo.photo-chris {
+  background-image: url("/images/zebra_team_chris.jpg");
+}
+
+.profile-photo.photo-joanna {
+  background-image: url("/images/zebra_team_jo.jpg");
 }
 
 .profile-details h1 {
