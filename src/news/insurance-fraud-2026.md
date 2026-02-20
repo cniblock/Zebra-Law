@@ -6,9 +6,9 @@ description: An overview of emerging fraud trends across the MGA market and how
   strategies.
 date: 2026-01-05
 category: industry
-image: fraud.jpg
+image: News_images/zebra_news_2026_fraud.png
 imageAlt: Insurance fraud investigation
-ogImage: https://www.zebra.law/images/fraud.jpg
+ogImage: https://www.zebra.law/images/News_images/zebra_news_2026_fraud.png
 related:
   - slug: telematics-fraud-detection
   - slug: siu-expands-services

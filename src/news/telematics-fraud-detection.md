@@ -6,9 +6,9 @@ description: How telematics technology and vehicle data analysis are
   insurance market.
 date: 2025-08-04
 category: industry
-image: connected-vehicle.jpg
+image: News_images/zebra_news_telematics.png
 imageAlt: Telematics data and fraud detection technology
-ogImage: https://www.zebra.law/images/connected-vehicle.jpg
+ogImage: https://www.zebra.law/images/News_images/zebra_news_telematics.png
 related:
   - slug: insurance-fraud-2026
   - slug: connected-vehicles-claims

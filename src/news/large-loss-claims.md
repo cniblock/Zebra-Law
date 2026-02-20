@@ -6,9 +6,9 @@ description: How Zebra Law manages catastrophic and large loss claims with a
   investigation.
 date: 2025-03-10
 category: general
-image: zebra_largeloss.jpg
+image: News_images/zebra_news_large_loss.jpg
 imageAlt: Large loss and catastrophic claims management
-ogImage: https://www.zebra.law/images/zebra_largeloss.jpg
+ogImage: https://www.zebra.law/images/News_images/zebra_news_large_loss.jpg
 related:
   - slug: siu-expands-services
 ---

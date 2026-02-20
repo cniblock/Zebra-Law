@@ -6,9 +6,9 @@ description: Exploring how advanced data analytics and predictive models are
   transforming risk profiling and underwriting across the MGA insurance market.
 date: 2024-11-04
 category: industry
-image: complex.jpg
+image: News_images/news_predictive_analytics.png
 imageAlt: Data analytics and risk profiling in insurance
-ogImage: https://www.zebra.law/images/complex.jpg
+ogImage: https://www.zebra.law/images/News_images/news_predictive_analytics.png
 related:
   - slug: telematics-fraud-detection
   - slug: connected-vehicles-claims

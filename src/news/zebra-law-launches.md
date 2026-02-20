@@ -4,9 +4,9 @@ title: "Introducing Zebra Law: a new breed of legal consultants | Zebra Law"
 description: "Zebra Law officially launches, bringing a fresh, tech-oriented approach to legal services for the insurance sector and the MGA market."
 date: 2023-05-01
 category: general
-image: zebra_banner_image_1.jpg
+image: News_images/zebra_law_office_1.png
 imageAlt: "Zebra Law office"
-ogImage: "https://www.zebra.law/images/zebra_banner_image_1.jpg"
+ogImage: "https://www.zebra.law/images/News_images/zebra_law_office_1.png"
 related:
   - slug: sample-article
   - slug: colin-bushell-mga-partnerships

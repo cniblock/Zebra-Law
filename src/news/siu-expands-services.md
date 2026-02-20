@@ -4,9 +4,9 @@ title: "Zebra SIU expands fraud investigation services across the public and pri
 description: "Zebra's Special Investigation Unit expands its fraud investigation services, bringing over 30 years of experience to both public and private sector clients."
 date: 2026-01-20
 category: general
-image: siu_banner.jpg
+image: News_images/zebra_news_siu.png
 imageAlt: "Zebra SIU fraud investigation services"
-ogImage: "https://www.zebra.law/images/siu_banner.jpg"
+ogImage: "https://www.zebra.law/images/News_images/zebra_news_siu.png"
 related:
   - slug: insurance-fraud-2026
   - slug: telematics-fraud-detection

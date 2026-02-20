@@ -13,6 +13,14 @@ module.exports = function (eleventyConfig) {
   // Copy Decap CMS admin files
   eleventyConfig.addPassthroughCopy("src/admin");
 
+  // Stabilise file watching when project is in OneDrive (avoids charity walk articles
+  // and other news items intermittently disappearing during dev server hot reload)
+  eleventyConfig.setChokidarConfig({
+    usePolling: true,
+    interval: 500,
+  });
+  eleventyConfig.setWatchThrottleWaitTime(300);
+
   // Create a "news" collection sorted by date (newest first)
   eleventyConfig.addCollection("news", function (collectionApi) {
     return collectionApi

@@ -7,9 +7,9 @@ description: How connected vehicle technology and ECU data are transforming
   claims management and fraud detection across the UK insurance sector.
 date: 2025-11-17
 category: industry
-image: zebra_vehicle.jpg
+image: News_images/zebra_news_connected_vehicles.png
 imageAlt: Connected vehicle technology and insurance claims
-ogImage: https://www.zebra.law/images/connected-vehicle.jpg
+ogImage: https://www.zebra.law/images/News_images/zebra_news_connected_vehicles.png
 related:
   - slug: telematics-fraud-detection
   - slug: data-analytics-risk-profiling
