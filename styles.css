@@ -388,6 +388,7 @@ h4 {
 .animate-delay-4 { transition-delay: 0.4s; }
 .animate-delay-5 { transition-delay: 0.5s; }
 .animate-delay-6 { transition-delay: 0.6s; }
+.animate-delay-7 { transition-delay: 0.7s; }
 
 /* Cookie Banner */
 .cookie-banner {
@@ -1080,6 +1081,12 @@ h4 {
   object-fit: cover;
   object-position: center top;
   display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.team-photo img.img-loaded {
+  opacity: 1;
 }
 
 .team-card:hover .team-photo {
@@ -1832,11 +1839,19 @@ h4 {
 }
 
 .profile-photo.photo-chris {
-  background-image: url("/images/zebra_team_chris.jpg");
+  background-image: url("/images/zebra_team_bakker.jpg");
 }
 
 .profile-photo.photo-joanna {
   background-image: url("/images/zebra_team_jo.jpg");
+}
+
+.profile-photo.photo-hallett {
+  background-image: url("/images/zebra_team_hallett.png");
+}
+
+.profile-photo.photo-finlee {
+  background-image: url("/images/zebra_team_finlee.png");
 }
 
 .profile-details h1 {

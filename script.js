@@ -238,28 +238,46 @@ if (newsFilters.length > 0) {
 
 // Scroll Animations using Intersection Observer
 function initScrollAnimations() {
-  const animatedElements = document.querySelectorAll(
-    ".animate-on-scroll, .animate-fade-in, .animate-slide-left, .animate-slide-right, .animate-scale-in"
-  );
-
-  if (animatedElements.length === 0) return;
-
   const observerOptions = {
     root: null,
     rootMargin: "0px 0px -50px 0px",
     threshold: 0.1,
   };
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+  // Team cards: observe the section so all 7 animate together when section enters view
+  // (avoids last 2 cards animating later when user scrolls horizontally)
+  const teamSection = document.querySelector(".team-section");
+  const teamCards = teamSection ? teamSection.querySelectorAll(".team-card") : [];
+  if (teamSection && teamCards.length > 0) {
+    const teamObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          teamCards.forEach((card) => card.classList.add("animate-visible"));
+          teamObserver.unobserve(teamSection);
+        }
+      });
+    }, observerOptions);
+    teamObserver.observe(teamSection);
+  }
 
-  animatedElements.forEach((el) => observer.observe(el));
+  // All other animated elements (exclude team cards - they use team-section observer)
+  const animatedElements = document.querySelectorAll(
+    ".animate-on-scroll, .animate-fade-in, .animate-slide-left, .animate-slide-right, .animate-scale-in"
+  );
+  const teamCardSet = new Set(teamCards || []);
+  const otherElements = Array.from(animatedElements).filter((el) => !teamCardSet.has(el));
+
+  if (otherElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    otherElements.forEach((el) => observer.observe(el));
+  }
 }
 
 // Auto-add animation classes to common elements
@@ -288,10 +306,10 @@ function autoAddAnimations() {
     el.classList.add("animate-fade-in");
   });
 
-  // Team cards
+  // Team cards (7 cards: use unique delays 1–7 for smooth cascade)
   document.querySelectorAll(".team-card").forEach((el, i) => {
     el.classList.add("animate-on-scroll");
-    el.classList.add(`animate-delay-${(i % 5) + 1}`);
+    el.classList.add(`animate-delay-${(i % 7) + 1}`);
   });
 
   // Value cards
@@ -402,6 +420,16 @@ function initMobileServiceTiles() {
   });
 }
 
+function initTeamPhotoLoad() {
+  document.querySelectorAll(".team-photo img").forEach((img) => {
+    if (img.complete) {
+      img.classList.add("img-loaded");
+    } else {
+      img.addEventListener("load", () => img.classList.add("img-loaded"));
+    }
+  });
+}
+
 function initImageRetry() {
   document.querySelectorAll("img[src]").forEach((img) => {
     img.addEventListener("error", function () {
@@ -422,5 +450,6 @@ document.addEventListener("DOMContentLoaded", () => {
   autoAddAnimations();
   initScrollAnimations();
   initMobileServiceTiles();
+  initTeamPhotoLoad();
   initImageRetry();
 });
